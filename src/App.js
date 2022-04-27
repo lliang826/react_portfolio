@@ -3,6 +3,8 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 
 import HomePage from './pages/HomePage';
 import NavBar from './NavBar';
+import './App.css';
+import './scripts/typewriter.js';
 
 import {
   BrowserRouter,
@@ -24,7 +26,6 @@ function App() {
         </Routes>
       </BrowserRouter>
     </div>
-
   );
 }
 

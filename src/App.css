@@ -1,38 +1,188 @@
-.App {
-  text-align: center;
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+
+/* Creates the typing effect. Source: https://css-tricks.com/snippets/css/typewriter-effect/ */
+#welcome h1 {
+    text-align: center;
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 3vw;
+    color: #ffffff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+    scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+    background-color: #0B0C10;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#skiing {
+    width: 600px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    border-radius: 50%;
 }
 
-.App-link {
-  color: #61dafb;
+#about {
+    padding: 5% 10% 5% 10%;
+    background-color: #c5c6c7;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#about h1 {
+    margin-bottom: 3%;
+}
+
+#skills {
+    padding: 5% 10% 5% 10%;
+    background-color: #b1a296;
+
+    display: grid;
+    grid-template-areas:
+        'title title title title'
+        'softwareIcon typingIcon databaseIcon workflowIcon'
+        'languages tools database workflow'
+        'workingIcon workingIcon educationIcon educationIcon'
+        'bcit bcit ubc ubc';
+    grid-gap: 20px;
+}
+
+#skills h1 {
+    grid-area: title;
+    margin-bottom: 3%;
+}
+
+#softwareIcon {
+    width: 100px;
+    height: auto;
+    grid-area: softwareIcon;
+}
+
+#typingIcon {
+    width: 100px;
+    height: auto;
+    grid-area: typingIcon;
+}
+
+#databaseIcon {
+    width: 100px;
+    height: auto;
+    grid-area: databaseIcon;
+}
+
+#workflowIcon {
+    width: 100px;
+    height: auto;
+    grid-area: workflowIcon;
+}
+
+#workingIcon {
+    width: 100px;
+    height: auto;
+    grid-area: workingIcon;
+}
+
+#educationIcon {
+    width: 100px;
+    height: auto;
+    grid-area: educationIcon;
+}
+
+#languages {
+    grid-area: languages;
+}
+
+#tools {
+    grid-area: tools;
+}
+
+#database {
+    grid-area: database;
+}
+
+#workflow {
+    grid-area: workflow;
+}
+
+#bcit {
+    grid-area: bcit;
+}
+
+#ubc {
+    grid-area: ubc;
+}
+
+#projects {
+    padding: 5% 10% 5% 10%;
+    background-color: #c5c6c7;
+
+    display: grid;
+    grid-template-areas:
+        'title title'
+        'CSTBuddyImg CSTBuddyText'
+        'SpotUrVibeImg SpotUrVibeText';
+    grid-gap: 20px;
+}
+
+#projects h1 {
+    grid-area: 'title';
+}
+
+#CSTBuddyImg {
+    grid-area: CSTBuddyImg;
+    margin-bottom: 10%;
+}
+
+#CSTBuddyText {
+    grid-area: CSTBuddyText;
+    margin-bottom: 10%;
+}
+
+#SpotUrVibeImg {
+    grid-area: SpotUrVibeImg;
+}
+
+#SpotUrVibeText {
+    grid-area: SpotUrVibeText;
+}
+
+.projectText a {
+    color: black;
+}
+
+#projects a:hover {
+    opacity: 0.7;
+}
+
+.projectImg img {
+    width: 100%;
+}
+
+.fa {
+    padding-top: 7px;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border: solid black 3px;
+}
+
+.fa:hover {
+    opacity: 0.8;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-github {
+    background: white;
+    color: black;
 }

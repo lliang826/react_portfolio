@@ -9,12 +9,13 @@ const NavBar = () => (
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
+            <div class="navbar-nav mr-auto">
                 <Link className="nav-link" to="/">Home</Link>
-                <a class="nav-item nav-link" href="about.html">About Me</a>
                 <a class="nav-item nav-link" href="projects.html">Projects</a>
-                <a class="nav-item nav-link" href="blog.html">Blog</a>
-                <a class="nav-item nav-link" href="contact.html">Contact Me</a>
+            </div>
+            <div class="navbar-nav ml-auto">
+                <a href="https://www.linkedin.com/in/lawrence-liang/" target="_blank" class="fa fa-linkedin"></a>
+                <a href="https://github.com/lliang826" target="blank" class="fa fa-github"></a>
             </div>
         </div>
     </nav>
