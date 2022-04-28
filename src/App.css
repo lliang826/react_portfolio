@@ -9,12 +9,9 @@
     color: #ffffff;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     background-color: #0B0C10;
+    color: white;
 }
 
 #skiing {
@@ -28,97 +25,8 @@ body {
     border-radius: 50%;
 }
 
-#about {
-    padding: 5% 10% 5% 10%;
-    background-color: #c5c6c7;
-}
-
-#about h1 {
-    margin-bottom: 3%;
-}
-
-#skills {
-    padding: 5% 10% 5% 10%;
-    background-color: #b1a296;
-
-    display: grid;
-    grid-template-areas:
-        'title title title title'
-        'softwareIcon typingIcon databaseIcon workflowIcon'
-        'languages tools database workflow'
-        'workingIcon workingIcon educationIcon educationIcon'
-        'bcit bcit ubc ubc';
-    grid-gap: 20px;
-}
-
-#skills h1 {
-    grid-area: title;
-    margin-bottom: 3%;
-}
-
-#softwareIcon {
-    width: 100px;
-    height: auto;
-    grid-area: softwareIcon;
-}
-
-#typingIcon {
-    width: 100px;
-    height: auto;
-    grid-area: typingIcon;
-}
-
-#databaseIcon {
-    width: 100px;
-    height: auto;
-    grid-area: databaseIcon;
-}
-
-#workflowIcon {
-    width: 100px;
-    height: auto;
-    grid-area: workflowIcon;
-}
-
-#workingIcon {
-    width: 100px;
-    height: auto;
-    grid-area: workingIcon;
-}
-
-#educationIcon {
-    width: 100px;
-    height: auto;
-    grid-area: educationIcon;
-}
-
-#languages {
-    grid-area: languages;
-}
-
-#tools {
-    grid-area: tools;
-}
-
-#database {
-    grid-area: database;
-}
-
-#workflow {
-    grid-area: workflow;
-}
-
-#bcit {
-    grid-area: bcit;
-}
-
-#ubc {
-    grid-area: ubc;
-}
-
 #projects {
-    padding: 5% 10% 5% 10%;
-    background-color: #c5c6c7;
+    padding: 4% 2% 5% 2%;
 
     display: grid;
     grid-template-areas:
@@ -142,6 +50,13 @@ body {
     margin-bottom: 10%;
 }
 
+#CSTBuddyText p {
+  height: 400px;
+  width: 400px;
+  border: 1px solid #ccc;
+  overflow: auto;
+}
+
 #SpotUrVibeImg {
     grid-area: SpotUrVibeImg;
 }
@@ -151,7 +66,7 @@ body {
 }
 
 .projectText a {
-    color: black;
+    color: white;
 }
 
 #projects a:hover {
@@ -163,10 +78,10 @@ body {
 }
 
 .fa {
-    padding-top: 7px;
-    font-size: 30px;
-    width: 50px;
-    height: 50px;
+    padding-top: 5px;
+    font-size: 26px;
+    width: 40px;
+    height: 40px;
     text-align: center;
     text-decoration: none;
     margin: 5px 2px;
